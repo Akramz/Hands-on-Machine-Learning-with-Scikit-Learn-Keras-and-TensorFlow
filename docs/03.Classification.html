@@ -1015,7 +1015,7 @@ $$recall = \frac{TP}{TP+FN}$$
 </ul>
 </li>
 </ul>
-$$F_{1}=\frac{2}{{1 \over precision}+{1 \over recall}}=2 \times \frac{precision \times recall}{precision + recall}$$
+$$F_{1}=\frac{2}{\frac{1}{precision}+\frac{1}{recall}}=2 \times \frac{precision \times recall}{precision + recall}$$
 </div>
 </div>
 </div>
@@ -1964,7 +1964,7 @@ $$F_{1}=\frac{2}{{1 \over precision}+{1 \over recall}}=2 \times \frac{precision 
 </li>
 <li>Another startegy is to train a binary classifier for each pair of digits.<ul>
 <li>This is called 1-vs-1.</li>
-<li>If there are $N$ classes, you need to train $N \times (N-1) \over 2$.</li>
+<li>If there are $N$ classes, you need to train $\frac{N \times (N-1)}{2}$.</li>
 <li>For the MNIST Problem, this means training $45$ binary classifiers.</li>
 <li><strong>and see which class wins the most duals</strong>.</li>
 <li>Even though we need to create many classifiers, they are needed to be trained on only the data points where one of the classes appeared.</li>
