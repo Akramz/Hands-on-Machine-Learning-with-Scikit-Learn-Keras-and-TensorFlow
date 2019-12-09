@@ -10,9 +10,27 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Title
+      title: Chapter 1. The Machine Learning Landscape
+      url: /01.ML_Landscape
+    - output: web,pdf
+      title: Chapter 2. End-to-End Machine Learning Project
+      url: /02.End-to-End-ML-Project
+    - output: web,pdf
+      title: Chapter 3. Classification
+      url: /03.Classification
+    - output: web,pdf
+      title: Chapter 4. Training Models
+      url: /04.Training-Models
+    - output: web,pdf
+      title: Chapter 5. Support Vector Machines
+      url: /05.SVMs
+    - output: web,pdf
+      title: Chapter 6. Decision Trees
+      url: /06.Decision_Trees
+    - output: web,pdf
+      title: Chapter 7. Ensemble Learning & Random Forests
       url: /07.Ensembles_RFs
     output: web
-    title: Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow
+    title: hands_on_ml
   output: web
   title: Sidebar

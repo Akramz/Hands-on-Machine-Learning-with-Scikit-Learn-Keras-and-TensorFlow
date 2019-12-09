@@ -1,6 +1,12 @@
 {
-  "Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow": {
+  "hands_on_ml": {
     "Overview": "/",
-    "Title": "/07.Ensembles_RFs"
+    "Chapter 1. The Machine Learning Landscape": "/01.ML_Landscape",
+    "Chapter 2. End-to-End Machine Learning Project": "/02.End-to-End-ML-Project",
+    "Chapter 3. Classification": "/03.Classification",
+    "Chapter 4. Training Models": "/04.Training-Models",
+    "Chapter 5. Support Vector Machines": "/05.SVMs",
+    "Chapter 6. Decision Trees": "/06.Decision_Trees",
+    "Chapter 7. Ensemble Learning & Random Forests": "/07.Ensembles_RFs"
   }
 }
