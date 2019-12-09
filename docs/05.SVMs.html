@@ -821,7 +821,8 @@ $$\hat{w}=\sum_{i=1}^{m}\hat{w}^{(i)}t^{(i)}x^{(i)} \\ \hat{b} = \frac{1}{n_s} \
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="1.-What-is-the-Fundamental-Idea-Behind-Support-Vector-Machines">1. What is the Fundamental Idea Behind Support Vector Machines<a class="anchor-link" href="#1.-What-is-the-Fundamental-Idea-Behind-Support-Vector-Machines">&#182;</a></h4><ul>
+<p><strong>1. What is the Fundamental Idea Behind Support Vector Machines</strong></p>
+<ul>
 <li>For classification, The premise of SVMs is finding decision boundaries that maximize relative distance between them and points and minimize the number of violations in the supporting street.</li>
 <li>For regression, the opposite is true, SVMs optimize for a street the is as close as possible to the training instances, hence maximizing the number of violations to it.</li>
 </ul>
@@ -831,7 +832,8 @@ $$\hat{w}=\sum_{i=1}^{m}\hat{w}^{(i)}t^{(i)}x^{(i)} \\ \hat{b} = \frac{1}{n_s} \
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="2.-What-is-a-Support-Vector">2. What is a Support Vector<a class="anchor-link" href="#2.-What-is-a-Support-Vector">&#182;</a></h4><ul>
+<p><strong>2. What is a Support Vector</strong></p>
+<ul>
 <li>A Support vector represents the training instance that is used to create a boundary of the street, hence it's considered a "support" for it.</li>
 <li>Any instance that is not a support vector has no influence whatsoever on the decision boundary.</li>
 </ul>
@@ -841,7 +843,8 @@ $$\hat{w}=\sum_{i=1}^{m}\hat{w}^{(i)}t^{(i)}x^{(i)} \\ \hat{b} = \frac{1}{n_s} \
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="3.-Why-is-It-Important-to-Scale-the-Input-when-using-SVMs">3. Why is It Important to Scale the Input when using SVMs<a class="anchor-link" href="#3.-Why-is-It-Important-to-Scale-the-Input-when-using-SVMs">&#182;</a></h4><ul>
+<p><strong>3. Why is It Important to Scale the Input when using SVMs</strong></p>
+<ul>
 <li>A proparly scaled feature space will create empty space for the SVM model to be optimized to split it.</li>
 <li>If the feature space is not scaled, the algorithm will tend to ignore features with small scales.</li>
 </ul>
@@ -851,7 +854,8 @@ $$\hat{w}=\sum_{i=1}^{m}\hat{w}^{(i)}t^{(i)}x^{(i)} \\ \hat{b} = \frac{1}{n_s} \
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="4.-Can-an-SVM-classifier-output-a-confidence-score-when-it-classifies-an-instance?-How-about-a-probability?">4. Can an SVM classifier output a confidence score when it classifies an instance? How about a probability?<a class="anchor-link" href="#4.-Can-an-SVM-classifier-output-a-confidence-score-when-it-classifies-an-instance?-How-about-a-probability?">&#182;</a></h4><ul>
+<p><strong>4. Can an SVM classifier output a confidence score when it classifies an instance? How about a probability?</strong></p>
+<ul>
 <li>SVM model can output confidence scores based on the distance from the instance to the decision boundary.</li>
 <li>SVMs can't really output a probability score.<ul>
 <li>But you could estimate it using sklearn's hyper-parameters.</li>
@@ -864,7 +868,8 @@ $$\hat{w}=\sum_{i=1}^{m}\hat{w}^{(i)}t^{(i)}x^{(i)} \\ \hat{b} = \frac{1}{n_s} \
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="5.-Should-You-Use-the-Primal-or-the-Dual-form-of-the-SVM-problem-to-train-a-model-on-a-training-set-with-millions-of-instances-and-hundreds-of-features?">5. Should You Use the Primal or the Dual form of the SVM problem to train a model on a training set with millions of instances and hundreds of features?<a class="anchor-link" href="#5.-Should-You-Use-the-Primal-or-the-Dual-form-of-the-SVM-problem-to-train-a-model-on-a-training-set-with-millions-of-instances-and-hundreds-of-features?">&#182;</a></h4><ul>
+<p><strong>5. Should You Use the Primal or the Dual form of the SVM problem to train a model on a training set with millions of instances and hundreds of features?</strong></p>
+<ul>
 <li>It's better to use the Primal form of the SVM problem because the Dual form is only faster when the number of features is more than the number of instances.</li>
 </ul>
 
@@ -873,7 +878,8 @@ $$\hat{w}=\sum_{i=1}^{m}\hat{w}^{(i)}t^{(i)}x^{(i)} \\ \hat{b} = \frac{1}{n_s} \
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="6.-Say-you've-trained-an-SVM-classifier-with-the-RBF-Kernel,-but-it-seems-to-underfit-the-training-data,-should-you-increase-or-decrease-$\gamma$?-How-about-$C$?">6. Say you've trained an SVM classifier with the RBF Kernel, but it seems to underfit the training data, should you increase or decrease $\gamma$? How about $C$?<a class="anchor-link" href="#6.-Say-you've-trained-an-SVM-classifier-with-the-RBF-Kernel,-but-it-seems-to-underfit-the-training-data,-should-you-increase-or-decrease-$\gamma$?-How-about-$C$?">&#182;</a></h4><ul>
+<p><strong>6. Say you've trained an SVM classifier with the RBF Kernel, but it seems to underfit the training data, should you increase or decrease $\gamma$? How about $C$?</strong></p>
+<ul>
 <li>Increasing $\gamma$ and $C$ is good because it will increase model sensitivity.</li>
 </ul>
 
@@ -882,7 +888,8 @@ $$\hat{w}=\sum_{i=1}^{m}\hat{w}^{(i)}t^{(i)}x^{(i)} \\ \hat{b} = \frac{1}{n_s} \
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="7.-How-you-should-set-the-QP-parameters-($H$,-$f$,-$A$,-and-$b$)-to-solve-the-soft-margin-linear-SVM-classifier-problem-using-an-off-the-shelf-QP-solver?">7. How you should set the QP parameters ($H$, $f$, $A$, and $b$) to solve the soft margin linear SVM classifier problem using an off-the-shelf QP solver?<a class="anchor-link" href="#7.-How-you-should-set-the-QP-parameters-($H$,-$f$,-$A$,-and-$b$)-to-solve-the-soft-margin-linear-SVM-classifier-problem-using-an-off-the-shelf-QP-solver?">&#182;</a></h4><ul>
+<p><strong>7. How you should set the QP parameters ($H$, $f$, $A$, and $b$) to solve the soft margin linear SVM classifier problem using an off-the-shelf QP solver?</strong></p>
+<ul>
 <li>The general formulation of a quadratic programming problem is as follows:</li>
 </ul>
 $$\begin{array}{ll}
@@ -905,7 +912,8 @@ $$f=[f' \underbrace{C\cdots C}_{m\text{ times}}] \\ b=[b' \quad \underbrace{0\cd
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="8.-Train-a-LinearSVC-on-a-Linearly-Separable-Dataset.-Then-train-an-SVC-&amp;-a-SGDClassifier-on-the-same-dataset.-See-if-you-can-get-them-to-produce-roughly-the-same-model">8. Train a <code>LinearSVC</code> on a Linearly Separable Dataset. Then train an <code>SVC</code> &amp; a <code>SGDClassifier</code> on the same dataset. See if you can get them to produce roughly the same model<a class="anchor-link" href="#8.-Train-a-LinearSVC-on-a-Linearly-Separable-Dataset.-Then-train-an-SVC-&amp;-a-SGDClassifier-on-the-same-dataset.-See-if-you-can-get-them-to-produce-roughly-the-same-model">&#182;</a></h4>
+<p><strong>8. Train a <code>LinearSVC</code> on a Linearly Separable Dataset. Then train an <code>SVC</code> &amp; a <code>SGDClassifier</code> on the same dataset. See if you can get them to produce roughly the same model</strong></p>
+
 </div>
 </div>
 </div>
@@ -1563,7 +1571,8 @@ $$f=[f' \underbrace{C\cdots C}_{m\text{ times}}] \\ b=[b' \quad \underbrace{0\cd
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="9.-Train-an-SVM-classifier-on-the-MNIST-dataset.-Since-SVM-classifiers-are-binary-classifiers,-you-will-need-to-use-one-versus-rest-to-classify-all-10-digits.-You-may-want-to-tune-the-hyper-parameters-using-small-validation-sets-to-speed-up-the-process.-What-accuracy-can-you-reach?">9. Train an SVM classifier on the MNIST dataset. Since SVM classifiers are binary classifiers, you will need to use one-versus-rest to classify all 10 digits. You may want to tune the hyper-parameters using small validation sets to speed up the process. What accuracy can you reach?<a class="anchor-link" href="#9.-Train-an-SVM-classifier-on-the-MNIST-dataset.-Since-SVM-classifiers-are-binary-classifiers,-you-will-need-to-use-one-versus-rest-to-classify-all-10-digits.-You-may-want-to-tune-the-hyper-parameters-using-small-validation-sets-to-speed-up-the-process.-What-accuracy-can-you-reach?">&#182;</a></h4>
+<p><strong>9. Train an SVM classifier on the MNIST dataset. Since SVM classifiers are binary classifiers, you will need to use one-versus-rest to classify all 10 digits. You may want to tune the hyper-parameters using small validation sets to speed up the process. What accuracy can you reach?</strong></p>
+
 </div>
 </div>
 </div>
@@ -1711,7 +1720,8 @@ $$f=[f' \underbrace{C\cdots C}_{m\text{ times}}] \\ b=[b' \quad \underbrace{0\cd
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="10.-Train-an-SVM-Regressor-on-the-California-Housing-Dataset">10. Train an SVM Regressor on the California Housing Dataset<a class="anchor-link" href="#10.-Train-an-SVM-Regressor-on-the-California-Housing-Dataset">&#182;</a></h4>
+<p><strong>10. Train an SVM Regressor on the California Housing Dataset</strong></p>
+
 </div>
 </div>
 </div>

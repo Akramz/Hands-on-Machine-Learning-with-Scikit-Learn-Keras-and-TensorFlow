@@ -1060,103 +1060,99 @@ sidebar: home_sidebar
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Exercices">Exercices<a class="anchor-link" href="#Exercices">&#182;</a></h2><ol>
-<li>How would you define Machine Learning?<ul>
+<h2 id="Exercices">Exercices<a class="anchor-link" href="#Exercices">&#182;</a></h2><p><strong>1. How would you define Machine Learning?</strong></p>
+<ul>
 <li>Machine Learning is the ability to learn from data without being explicitly programmed.</li>
 </ul>
-</li>
-<li>Can you name four types of problems where is shines?<ul>
+<p><strong>2. Can you name four types of problems where is shines?</strong></p>
+<ul>
 <li>Image classification, Voice Recognition, Semantic Segmentation, Sentiment Analysis.</li>
 </ul>
-</li>
-<li>What is a labeled training set?<ul>
-<li>In the context of supervised learning, a labeled training set is a data set with available targets, what you want to predict is known before training.<ul>
+<p><strong>3. What is a labeled training set?</strong></p>
+<ul>
+<li>In the context of supervised learning, a labeled training set is a data set with available targets, what you want to predict is known before training.</li>
 <li>Example: a training set composed of images of cats or dogs and the corresponding <strong>label</strong> (cat/dog) for each of the images.</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>What are the two most common supervised tasks?<ul>
+<p><strong>4. What are the two most common supervised tasks?</strong></p>
+<ul>
 <li>Classification (where the target is categorical in nature) &amp; Regression (where the labels are continuous in nature).</li>
 </ul>
-</li>
-<li>Can you name four common unsupervised tasks?<ul>
+<p><strong>5. Can you name four common unsupervised tasks?</strong></p>
+<ul>
 <li>Clustering, Anomaly detection, Visualization, dimensionality reduction.</li>
 </ul>
-</li>
-<li>What type of machine learning algorithm would you use to allow a robot to walk in many paths in an unknown terrain?<ul>
+<p><strong>6. What type of machine learning algorithm would you use to allow a robot to walk in many paths in an unknown terrain?</strong></p>
+<ul>
 <li>Reinforcement learning.</li>
 </ul>
-</li>
-<li>What type of algorithm would you use to segment your customers into multiple groups?<ul>
+<p><strong>7. What type of algorithm would you use to segment your customers into multiple groups?</strong></p>
+<ul>
 <li>An unsupervised clustering algorithm like: K-means, DBSCAN.</li>
 </ul>
-</li>
-<li>Would you frame the problem of spam detection as a supervised learning or an unsupervised learning problem?<ul>
+<p><strong>8. Would you frame the problem of spam detection as a supervised learning or an unsupervised learning problem?</strong></p>
+<ul>
 <li>It a supervised learning problem.</li>
 </ul>
-</li>
-<li>What is an online learning system?<ul>
+<p><strong>9. What is an online learning system?</strong></p>
+<ul>
 <li>An online learning system continues to learn from new data after being deployed in production, in contrast to a batch learning model which would stop learning after the initial training process.</li>
 </ul>
-</li>
-<li>What is out-of-core learning?<ul>
+<p><strong>10. What is out-of-core learning?</strong></p>
+<ul>
 <li><em>We use out-of-core learning algorithms when the training data can't fit ina computer's RAM.</em></li>
 </ul>
-</li>
-<li>What type of learning algorithm relies on a similarity measure to make predictions?<ul>
+<p><strong>11. What type of learning algorithm relies on a similarity measure to make predictions?</strong></p>
+<ul>
 <li>Instance-based models, an example of that is K-nearest neighbors.</li>
 </ul>
-</li>
-<li>What is the difference between a model's parameters and a learning algorithm's hyper-parameter?<ul>
+<p><strong>12. What is the difference between a model's parameters and a learning algorithm's hyper-parameter?</strong></p>
+<ul>
 <li>A model's parameters are the knobs that, collectively, store the learned knowledge of the model, also called weights, they are continuously changed during training to minimize a cost function. Examples are a &amp; b in a y = ax + b linear model.</li>
 <li>A learning algorithm's hyper-parameter describes how the algorithm should learn and control the predictive power of the model, example is the learning rate, number of layers in a NN, regularization, batch size, they are set before training and aren't changed during training.</li>
 </ul>
-</li>
-<li>What do model-based algorithms search for?<ul>
+<p><strong>13. What do model-based algorithms search for?</strong></p>
+<ul>
 <li>A decision boundary.</li>
 </ul>
-</li>
-<li>What is the most common strategy they use to succeed?<ul>
+<p><strong>14. What is the most common strategy they use to succeed?</strong></p>
+<ul>
 <li>They minimize a cost function that describe the distance between the predictions outputted by the model and the real target values.</li>
 </ul>
-</li>
-<li>How do they make predictions?<ul>
+<p><strong>14. How do they make predictions?</strong></p>
+<ul>
 <li>They start with a set of initial parameters, make predictions based on the input &amp; their parameters, then adjust their parameters to minimize cost.</li>
 </ul>
-</li>
-<li>Can you name 4 of the main challenges in machine learning?<ul>
+<p><strong>15. Can you name 4 of the main challenges in machine learning?</strong></p>
+<ul>
 <li>Algorithmic challenges — Model Overfitting, Model Underfitting.</li>
 <li>Data challenges — Data mismatch, Noisy data.</li>
 </ul>
-</li>
-<li>If your model performs great on the training data but fails on the test data, What is happening?<ul>
+<p><strong>16. If your model performs great on the training data but fails on the test data, What is happening?</strong></p>
+<ul>
 <li>Overfitting, the model starts memorizing noise present on the training data to further minimize the cost function. </li>
 </ul>
-</li>
-<li>Can you name 3 possible solutions?<ul>
+<p><strong>17. Can you name 3 possible solutions?</strong></p>
+<ul>
 <li>Regularization, Adding more data, Simplifying the model.</li>
 </ul>
-</li>
-<li>What is a test set? &amp; Why you would want to use it?<ul>
+<p><strong>18. What is a test set? &amp; Why you would want to use it?</strong></p>
+<ul>
 <li>The whole data set is usually split into training data (~80%) and test data (~20%), we use test data to evaluate the generalizability of the model beyond the training data set.</li>
 </ul>
-</li>
-<li>What is the purpose of a validation set?<ul>
+<p><strong>19. What is the purpose of a validation set?</strong></p>
+<ul>
 <li>A validation set is used to fine-tune the models' hyper-parameters, what is called manual training, and leave the test set for the final evaluation.</li>
 </ul>
-</li>
-<li>What is the <code>train-dev</code> set?, When do you use it? &amp; How do you use it?<ul>
+<p><strong>20. What is the <code>train-dev</code> set?, When do you use it? &amp; How do you use it?</strong></p>
+<ul>
 <li>the <code>train-dev</code> is a validation set that is taken from a broad training set after performing the train/validation/test split.</li>
 <li>We use it when we have a broad training data set (ex. images of all animals) but specific validation/test set (zoo animal pics taken with mobile phones) and we want to correctly interpret the model's evaluation.</li>
 <li>We train the model on the training data set, we evaluate on <code>train-dev</code> and <code>validation</code>, if model performs badly on both, we have an overfitting case, if the model performs good in <code>train-dev</code> and badly on <code>validation</code> we have a data mismatch we the learning doesn't generalize to our specific production data.</li>
 </ul>
-</li>
-<li>What can go wrong if you tune hyper-parameters using the test set?<ul>
-<li>I can accidentaly overfit the test set as well by manually finding hyper-parameters that perform well on the test set but doesn't generalize to production data.</li>
+<p><strong>21. What can go wrong if you tune hyper-parameters using the test set?</strong></p>
+<ul>
+<li>I can accidentaly overfit the test set as well by manually finding hyper-parameters that perform well on the test set but doesn't generalize to production data.    </li>
 </ul>
-</li>
-</ol>
 
 </div>
 </div>

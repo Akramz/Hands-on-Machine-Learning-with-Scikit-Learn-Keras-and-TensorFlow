@@ -3194,7 +3194,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.-Which-Linear-Regression-Algorithm-can-you-use-if-you-have-a-training-set-with-millions-of-features?">1. Which Linear Regression Algorithm can you use if you have a training set with millions of features?<a class="anchor-link" href="#1.-Which-Linear-Regression-Algorithm-can-you-use-if-you-have-a-training-set-with-millions-of-features?">&#182;</a></h3><ul>
+<p><strong>1. Which Linear Regression Algorithm can you use if you have a training set with millions of features?</strong></p>
+<ul>
 <li>Ordinary Linear Regression with Stochastic/Mini-Batch Gradient Descent as an optimizier and Lasso (for feature selection) as a regulalrizer.<ul>
 <li>the normal equation doesn't scale with the number of features.</li>
 </ul>
@@ -3206,7 +3207,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.-Suppose-the-features-in-your-training-set-have-very-different-scales,-Which-algorithms-can-suffer-from-this?-and-How?-What-can-you-do-anout-it?">2. Suppose the features in your training set have very different scales, Which algorithms can suffer from this? and How? What can you do anout it?<a class="anchor-link" href="#2.-Suppose-the-features-in-your-training-set-have-very-different-scales,-Which-algorithms-can-suffer-from-this?-and-How?-What-can-you-do-anout-it?">&#182;</a></h3><ul>
+<p><strong>2. Suppose the features in your training set have very different scales, Which algorithms can suffer from this? and How? What can you do anout it?</strong></p>
+<ul>
 <li>Algorithms that rely on distances to optimize their parameters, like Linear regression with gradient descent.</li>
 <li>They suffer because the optimal optimization path is not straight because the feature scaling effects parameter scaling in the loss curve.</li>
 <li>The simple solution is to normalize/standarize all features to be in ranges such as $[0,1]$ $[-1,1]$ or using mean/standard diviation to center feature distributions around $0$ with $\sigma=1$.</li>
@@ -3219,7 +3221,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.-Can-gradient-descent-get-stuck-in-a-local-minimum-when-training-a-logistic-regression-model?">3. Can gradient descent get stuck in a local minimum when training a logistic regression model?<a class="anchor-link" href="#3.-Can-gradient-descent-get-stuck-in-a-local-minimum-when-training-a-logistic-regression-model?">&#182;</a></h3><ul>
+<p><strong>3. Can gradient descent get stuck in a local minimum when training a logistic regression model?</strong></p>
+<ul>
 <li>No, because a logistic regression's loss function is convex.</li>
 </ul>
 
@@ -3228,7 +3231,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.-Do-all-gradient-descent-algorithms-lead-to-the-same-model,-provided-you-let-them-run-long-enough?">4. Do all gradient descent algorithms lead to the same model, provided you let them run long enough?<a class="anchor-link" href="#4.-Do-all-gradient-descent-algorithms-lead-to-the-same-model,-provided-you-let-them-run-long-enough?">&#182;</a></h3><ul>
+<p><strong>4. Do all gradient descent algorithms lead to the same model, provided you let them run long enough?</strong></p>
+<ul>
 <li>Only if we have these extra requirements:<ul>
 <li>the learning rate is small enough</li>
 <li>The loss function is convex</li>
@@ -3245,7 +3249,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.-Suppose-you-use-batch-gradient-descent-and-you-plot-the-validation-error-at-each-epoch.-If-you-notice-the-validation-error-consistently-goes-up,-What-is-Likely-going-on?-How-can-you-fix-this?">5. Suppose you use batch gradient descent and you plot the validation error at each epoch. If you notice the validation error consistently goes up, What is Likely going on? How can you fix this?<a class="anchor-link" href="#5.-Suppose-you-use-batch-gradient-descent-and-you-plot-the-validation-error-at-each-epoch.-If-you-notice-the-validation-error-consistently-goes-up,-What-is-Likely-going-on?-How-can-you-fix-this?">&#182;</a></h3><ul>
+<p><strong>5. Suppose you use batch gradient descent and you plot the validation error at each epoch. If you notice the validation error consistently goes up, What is Likely going on? How can you fix this?</strong></p>
+<ul>
 <li>Overfitting, It is when the model's sensitivity picks up on noise present in the training data.</li>
 <li>We can fix this by either setting an early stopping strategy where we stop training once the validation loss starts increasing and/or we regularize (constrain) the model to only capture global patterns.</li>
 <li>If the training loss is also going up then it's clear that the learning rate is too high and the model is diverging.</li>
@@ -3256,7 +3261,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="6.-Is-it-a-good-Idea-to-stop-Mini-batch-gradient-descent-immediately-when-the-validation-error-goes-up?">6. Is it a good Idea to stop Mini-batch gradient descent immediately when the validation error goes up?<a class="anchor-link" href="#6.-Is-it-a-good-Idea-to-stop-Mini-batch-gradient-descent-immediately-when-the-validation-error-goes-up?">&#182;</a></h3><ul>
+<p><strong>6. Is it a good Idea to stop Mini-batch gradient descent immediately when the validation error goes up?</strong></p>
+<ul>
 <li>Because mini-batches sometimes do not represent the whole training set, we may witness an increase in validation loss but in general It's still decreasing.<ul>
 <li>So a good idea is to set a <code>patience</code> parameter, where you only stop after <code>parience</code> steps of increased validation loss. </li>
 </ul>
@@ -3269,7 +3275,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="7.-Which-gradient-descent-algorithm-will-reach-the-vicinity-of-the-optimal-solution-the-fastest?-Which-will-actually-converge?-How-can-you-make-the-others-converge-as-well?">7. Which gradient descent algorithm will reach the vicinity of the optimal solution the fastest? Which will actually converge? How can you make the others converge as well?<a class="anchor-link" href="#7.-Which-gradient-descent-algorithm-will-reach-the-vicinity-of-the-optimal-solution-the-fastest?-Which-will-actually-converge?-How-can-you-make-the-others-converge-as-well?">&#182;</a></h3><ul>
+<p><strong>7. Which gradient descent algorithm will reach the vicinity of the optimal solution the fastest? Which will actually converge? How can you make the others converge as well?</strong></p>
+<ul>
 <li>Learning is based on the startegy (Batch, Stochastic, Mini-Batch), generally BGD is considered the best in terms of stability but it takes a long time to converge. Other alternatives are faster (SGD and MBGD) with Stochatic Gradient Descent being the fastest.</li>
 <li>Given the appropriate learning rate, all gradient-based algorithms on convex loss curves are guaranteed to converge.</li>
 <li>We implement a <em>learning rate schedule</em> startegy to ensure that optimization algorithms converge to the solution.<ul>
@@ -3283,7 +3290,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="8.-Suppose-you're-using-polynomial-regression.-You-plot-the-learning-curves-and-you-notice-a-large-gap-between-the-training-error-and-the-validation-error.-What-is-hapenning?-What-are-three-ways-to-solve-this?">8. Suppose you're using polynomial regression. You plot the learning curves and you notice a large gap between the training error and the validation error. What is hapenning? What are three ways to solve this?<a class="anchor-link" href="#8.-Suppose-you're-using-polynomial-regression.-You-plot-the-learning-curves-and-you-notice-a-large-gap-between-the-training-error-and-the-validation-error.-What-is-hapenning?-What-are-three-ways-to-solve-this?">&#182;</a></h3><ul>
+<p><strong>8. Suppose you're using polynomial regression. You plot the learning curves and you notice a large gap between the training error and the validation error. What is hapenning? What are three ways to solve this?</strong></p>
+<ul>
 <li>If validation loss is far less than the training loss &amp; the gap between them is large it mostly means that the validation data is not representative of the training data.<ul>
 <li>Solution — Properly shuffle/sample the validation set.</li>
 </ul>
@@ -3304,7 +3312,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="9.-Suppose-you-used-Ridge-Regression-and-you-noticed-that-the-training-error-and-validation-error-are-almost-equal-and-fairly-high.-Would-you-say-the-model-suffers-from-high-bias-or-high-variance?-should-you-increase-the-regularization-hyper-parameter-$\alpha$-or-reduce-it?">9. Suppose you used Ridge Regression and you noticed that the training error and validation error are almost equal and fairly high. Would you say the model suffers from high bias or high variance? should you increase the regularization hyper-parameter $\alpha$ or reduce it?<a class="anchor-link" href="#9.-Suppose-you-used-Ridge-Regression-and-you-noticed-that-the-training-error-and-validation-error-are-almost-equal-and-fairly-high.-Would-you-say-the-model-suffers-from-high-bias-or-high-variance?-should-you-increase-the-regularization-hyper-parameter-$\alpha$-or-reduce-it?">&#182;</a></h3><ul>
+<p><strong>9. Suppose you used Ridge Regression and you noticed that the training error and validation error are almost equal and fairly high. Would you say the model suffers from high bias or high variance? should you increase the regularization hyper-parameter $\alpha$ or reduce it?</strong></p>
+<ul>
 <li>The model is typically underfitting, so it suffers from high-bias.</li>
 <li>We want a more complex model, so we reduce $\alpha$.</li>
 </ul>
@@ -3314,7 +3323,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="10.-Why-would-you-like-to-use?">10. Why would you like to use?<a class="anchor-link" href="#10.-Why-would-you-like-to-use?">&#182;</a></h3><ul>
+<p><strong>10. Why would you like to use?</strong></p>
+<ul>
 <li>Ridge regression instead of plain linear regression without regularization?<ul>
 <li>If my model suffers from overfitting and I want to constraint it (high variance).</li>
 </ul>
@@ -3335,7 +3345,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="11.-Suppose-you-have-to-classify-pictures-as-Outdoors/Indoors-and-Daytime/Nighttime.-Should-you-implement-two-Logistic-regression-classifiers-or-One-softmax-regression-classifier?">11. Suppose you have to classify pictures as Outdoors/Indoors and Daytime/Nighttime. Should you implement two Logistic regression classifiers or One softmax regression classifier?<a class="anchor-link" href="#11.-Suppose-you-have-to-classify-pictures-as-Outdoors/Indoors-and-Daytime/Nighttime.-Should-you-implement-two-Logistic-regression-classifiers-or-One-softmax-regression-classifier?">&#182;</a></h3><ul>
+<p><strong>11. Suppose you have to classify pictures as Outdoors/Indoors and Daytime/Nighttime. Should you implement two Logistic regression classifiers or One softmax regression classifier?</strong></p>
+<ul>
 <li>Because a picture can be taken Indoor in Daytime (class probabilities don't sum up to $1$) we should use two Logistic regression classifiers.</li>
 </ul>
 
@@ -3344,7 +3355,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="12.-Implement-Batch-Gradient-Descent-with-Early-Stopping-for-Softmax-Regression-(Without-the-use-of-Scikit-Learn)">12. Implement Batch Gradient Descent with Early Stopping for Softmax Regression (Without the use of Scikit-Learn)<a class="anchor-link" href="#12.-Implement-Batch-Gradient-Descent-with-Early-Stopping-for-Softmax-Regression-(Without-the-use-of-Scikit-Learn)">&#182;</a></h3><p>Let's do it using the MNIST Dataset:</p>
+<p><strong>12. Implement Batch Gradient Descent with Early Stopping for Softmax Regression (Without the use of Scikit-Learn)</strong></p>
+<p>Let's do it using the MNIST Dataset:</p>
 
 </div>
 </div>
@@ -3491,7 +3503,8 @@ $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="1.Softmax-Regression">1.Softmax Regression<a class="anchor-link" href="#1.Softmax-Regression">&#182;</a></h4><p>Let's start by creating the forward pass for softmax regression:</p>
+<p><strong>1.Softmax Regression</strong></p>
+<p>Let's start by creating the forward pass for softmax regression:</p>
 $$\hat{y}=\sigma(X\Theta)$$$$\sigma(x_{i})=\frac{e^{x_{i}}}{\sum_{j=1}^{K}e^{x_j}}$$$$X \in \Bbb{R}^{m \times (n+1)}, \Theta \in \Bbb{R}^{(n+1) \times K}$$$$
 X=
     \begin{pmatrix}
@@ -3699,7 +3712,8 @@ $$
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="2.-Batch-Gradient-Descent">2. Batch Gradient Descent<a class="anchor-link" href="#2.-Batch-Gradient-Descent">&#182;</a></h4><p>The loss is expressed as follows:</p>
+<p><strong>2. Batch Gradient Descent</strong></p>
+<p>The loss is expressed as follows:</p>
 $$J(\Theta)=-\frac{1}{m}\sum_{i=1}^{m}\sum_{k=1}^{K}y_{k}^{(i)}log(\hat{p}_{k}^{(i)})$$$$\hat{p} \in \Bbb{R}^{m \times K}, y \in \Bbb{R}^{m \times K} (one-hot \space encoded \space from \space \Bbb{R}^{m \times 1})$$<p>&amp; its gradient is:</p>
 $$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}(\hat{p}^{(i)}_{k}-y^{(i)}_{k})x^{(i)}$$<p>Let's implement it:</p>
 
@@ -3888,7 +3902,8 @@ $$\nabla_{\Theta}J(\Theta) = \frac{1}{m}X^{T}(\hat{p}-y)$$
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="3.-Early-Stopping">3. Early Stopping<a class="anchor-link" href="#3.-Early-Stopping">&#182;</a></h4>
+<p><strong>3. Early Stopping</strong></p>
+
 </div>
 </div>
 </div>
@@ -3920,7 +3935,8 @@ $$\nabla_{\Theta}J(\Theta) = \frac{1}{m}X^{T}(\hat{p}-y)$$
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="4.-Training-Loop">4. Training Loop<a class="anchor-link" href="#4.-Training-Loop">&#182;</a></h4><p>The Gradient Descent Algorithm is:</p>
+<p><strong>4. Training Loop</strong></p>
+<p>The Gradient Descent Algorithm is:</p>
 $$\Theta \leftarrow \Theta - \alpha \nabla_{\Theta}J(\Theta)$$
 </div>
 </div>

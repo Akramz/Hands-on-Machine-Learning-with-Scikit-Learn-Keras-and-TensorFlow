@@ -599,7 +599,8 @@ $$H_i=-\sum_{k=1}^{n}p_{i,k}log_2(p_{i,k})$$<ul>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="1.-What-is-the-approximate-depth-of-a-decision-tree-trained-without-restrictions-on-a-training-set-with-1-million-instances?">1. What is the approximate depth of a decision tree trained without restrictions on a training set with 1 million instances?<a class="anchor-link" href="#1.-What-is-the-approximate-depth-of-a-decision-tree-trained-without-restrictions-on-a-training-set-with-1-million-instances?">&#182;</a></h4><ul>
+<p><strong>1. What is the approximate depth of a decision tree trained without restrictions on a training set with 1 million instances?</strong></p>
+<ul>
 <li>If the tree is balanced, then at every layer it splits the samples in two, so the depth is $log_{2}(1\,000\,000) \approx 20$.<ul>
 <li>Acutally a bit more since the tree won't be perfectly balanced.</li>
 </ul>
@@ -611,7 +612,8 @@ $$H_i=-\sum_{k=1}^{n}p_{i,k}log_2(p_{i,k})$$<ul>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="2.-Is-a-node's-Gini-impurity-generally-lower-or-greater-than-its-parent's?-Always-Lower/greater?">2. Is a node's Gini impurity generally lower or greater than its parent's? Always Lower/greater?<a class="anchor-link" href="#2.-Is-a-node's-Gini-impurity-generally-lower-or-greater-than-its-parent's?-Always-Lower/greater?">&#182;</a></h4><ul>
+<p><strong>2. Is a node's Gini impurity generally lower or greater than its parent's? Always Lower/greater?</strong></p>
+<ul>
 <li>Gini's impurity score is generally lower than its parent.</li>
 <li>However, it is possible for a child node to have higher Gini's score as long as it's compensated by its other binary node and by the weights of its sample size.</li>
 </ul>
@@ -621,7 +623,8 @@ $$H_i=-\sum_{k=1}^{n}p_{i,k}log_2(p_{i,k})$$<ul>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="3.-If-a-decision-tree-is-overfitting-the-training-set,-is-it-a-good-idea-to-try-decreasing-max_depth?">3. If a decision tree is overfitting the training set, is it a good idea to try decreasing <code>max_depth</code>?<a class="anchor-link" href="#3.-If-a-decision-tree-is-overfitting-the-training-set,-is-it-a-good-idea-to-try-decreasing-max_depth?">&#182;</a></h4><ul>
+<p><strong>3. If a decision tree is overfitting the training set, is it a good idea to try decreasing <code>max_depth</code>?</strong></p>
+<ul>
 <li>Yes, It's a good idea since you're contraining the model's predictions to bigger <code>sample_size</code> averages.</li>
 </ul>
 
@@ -630,7 +633,8 @@ $$H_i=-\sum_{k=1}^{n}p_{i,k}log_2(p_{i,k})$$<ul>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="4.-If-a-decision-tree-is-underfitting-the-training-set,-is-it-a-good-idea-to-try-scaling-the-input-features?">4. If a decision tree is underfitting the training set, is it a good idea to try scaling the input features?<a class="anchor-link" href="#4.-If-a-decision-tree-is-underfitting-the-training-set,-is-it-a-good-idea-to-try-scaling-the-input-features?">&#182;</a></h4><ul>
+<p><strong>4. If a decision tree is underfitting the training set, is it a good idea to try scaling the input features?</strong></p>
+<ul>
 <li>Decision Trees don't need feature scaling for them to work, you can reduce underfitting by increasing <code>max_depth</code>, decreasing <code>min_leaf_samples</code> or any of the other regularization hyper-parameters.</li>
 </ul>
 
@@ -639,7 +643,8 @@ $$H_i=-\sum_{k=1}^{n}p_{i,k}log_2(p_{i,k})$$<ul>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="5.-If-it-takes-one-hour-to-train-a-decision-tree-on-a-training-set-containing-one-million-instances,-roughly-how-much-time-it-would-take-it-on-a-10M-training-set?">5. If it takes one hour to train a decision tree on a training set containing one million instances, roughly how much time it would take it on a 10M training set?<a class="anchor-link" href="#5.-If-it-takes-one-hour-to-train-a-decision-tree-on-a-training-set-containing-one-million-instances,-roughly-how-much-time-it-would-take-it-on-a-10M-training-set?">&#182;</a></h4><ul>
+<p><strong>5. If it takes one hour to train a decision tree on a training set containing one million instances, roughly how much time it would take it on a 10M training set?</strong></p>
+<ul>
 <li>$11.66$hours.</li>
 </ul>
 
@@ -648,7 +653,8 @@ $$H_i=-\sum_{k=1}^{n}p_{i,k}log_2(p_{i,k})$$<ul>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="6.-If-your-training-set-contains-100K-instances,-will-setting-presort=True-speedup-training?">6. If your training set contains 100K instances, will setting <code>presort=True</code> speedup training?<a class="anchor-link" href="#6.-If-your-training-set-contains-100K-instances,-will-setting-presort=True-speedup-training?">&#182;</a></h4><ul>
+<p><strong>6. If your training set contains 100K instances, will setting <code>presort=True</code> speedup training?</strong></p>
+<ul>
 <li>No, sorting data will only boost performance when you have instance on the scale of less than a few thousands.</li>
 </ul>
 
@@ -657,7 +663,8 @@ $$H_i=-\sum_{k=1}^{n}p_{i,k}log_2(p_{i,k})$$<ul>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="7.-Train-&amp;-Fine-tune-a-decision-tree-for-the-moons-dataset-by-following-these-steps:">7. Train &amp; Fine-tune a decision tree for the moons dataset by following these steps:<a class="anchor-link" href="#7.-Train-&amp;-Fine-tune-a-decision-tree-for-the-moons-dataset-by-following-these-steps:">&#182;</a></h4>
+<p><strong>7. Train &amp; Fine-tune a decision tree for the moons dataset by following these steps:</strong></p>
+
 </div>
 </div>
 </div>
@@ -1031,7 +1038,8 @@ $$H_i=-\sum_{k=1}^{n}p_{i,k}log_2(p_{i,k})$$<ul>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="8.-Grow-a-Forest-by-following-these-steps">8. Grow a Forest by following these steps<a class="anchor-link" href="#8.-Grow-a-Forest-by-following-these-steps">&#182;</a></h4>
+<p><strong>8. Grow a Forest by following these steps</strong></p>
+
 </div>
 </div>
 </div>
