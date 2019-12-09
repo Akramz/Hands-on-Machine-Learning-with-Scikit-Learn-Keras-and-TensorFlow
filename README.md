@@ -8,11 +8,49 @@
 
 -->
 
-# Notebooks — "[Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646)" by [Aurelien Geron](https://twitter.com/aureliengeron)
+# Hands-on ML with Scikit-Learn, Keras & TF by Aurelien Geron
 
 
 
 
 <div style="text-align:center"><img style="width:100%" src="static/imgs/book_cover.png"></div>
+
+- This Books assumes you know close to nothing about machine learning.
+- We will cover a large number of machine learning techniques, from the most simpleset and widely used (Linear Regression) to deep learning techniques that win competitions.
+- We will be using production-ready Python frameworks
+    - Scikit-Learn
+    - Keras
+    - TensorFlow
+- This book favors a hands-on approach through a series of working examples and just a little bit of theory.
+- Prerequesites
+    - Some Python programming experience
+    - Familiarity with NumPy, Pandas, and Matplotlib
+    - A reasonable understanding of college-level math (calculus, probability, Linear Algebra, and statistics)
+- The first part of the book is mostly based on Scikit-Learn, while the 2nd part is using Keras/TensorFlow.
+
+## Roadmap
+
+### 1. The Fundamentals of Machine Learning
+- [The Machine Learning Landscape](01.ML_Landscape.ipynb)
+- [End-to-End Machine Learning Project](02.End-to-End-ML-Project.ipynb)
+- [Classification](03.Classification.ipynb)
+- [Training Models](04.Training-Models.ipynb)
+- [Support Vector Machines](05.SVMs.ipynb)
+- [Decision Trees](06.Decision_Trees.ipynb)
+- [Ensemble Learning and Random Forests](07.Ensembles_RFs.ipynb)
+- Dimensionality Reduction
+- Unsupervised Learning Techniques
+
+### 2. Neural Networks & Deep Learning
+- Introduction to Artificial Neural Networks with Keras
+- Training Deep Neural Networks
+- Custom models and training with TensorFlow
+- Loading and Preprocessing Data with TensorFlow
+- Deep Computer Vision using Convolutional Neural Networks
+- Processing Sequences Using RNNs and CNNs
+- Natural Language Processing with RNNs and Attention
+- Representation Learning and Generative Learning Using Autoencoders and GANs
+- Reinforcement Learning
+- Training and Deploying TensorFlow Models at Scale
 
 ---

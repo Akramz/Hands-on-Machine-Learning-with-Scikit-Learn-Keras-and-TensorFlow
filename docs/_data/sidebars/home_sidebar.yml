@@ -10,9 +10,6 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow
-      url: /00.Preface
-    - output: web,pdf
       title: Title
       url: /07.Ensembles_RFs
     output: web
