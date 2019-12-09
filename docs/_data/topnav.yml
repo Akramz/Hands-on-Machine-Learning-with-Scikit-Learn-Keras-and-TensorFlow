@@ -2,7 +2,7 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/Akramz/hands_on_ml_src
+      external_url: https://github.com/Akramz/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow
 
 #Topnav dropdowns
 topnav_dropdowns:

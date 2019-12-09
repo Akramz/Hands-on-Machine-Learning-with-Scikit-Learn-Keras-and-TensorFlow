@@ -1,7 +1,7 @@
-repository: Akramz/hands_on_ml_src
+repository: Akramz/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow
 output: web
-topnav_title: hands_on_ml_src
-site_title: hands_on_ml_src
+topnav_title: Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow
+site_title: Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow
 company_name: Aurelien Geron
 description: My Personal Notebooks & Code to Go Along with "Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow Concepts, Tools, and Techniques to Build Intelligent Systems"  Book by Aurelien Geron
 # Add Google analytics id if you have one and want to use it here
@@ -18,6 +18,8 @@ exclude:
   - .idea/
   - .gitignore
   - vendor
+ 
+exclude: [vendor]
 
 highlighter: rouge
 markdown: kramdown
