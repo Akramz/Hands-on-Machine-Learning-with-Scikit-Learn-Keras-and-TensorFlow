@@ -31,13 +31,13 @@
 ## Roadmap
 
 ### 1. The Fundamentals of Machine Learning
-- [The Machine Learning Landscape](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/01.ML_Landscape.ipynb)
-- [End-to-End Machine Learning Project](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/02.End-to-End-ML-Project.ipynb)
-- [Classification](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/03.Classification.ipynb)
-- [Training Models](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/04.Training-Models.ipynb)
-- [Support Vector Machines](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/05.SVMs.ipynb)
-- [Decision Trees](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/06.Decision_Trees.ipynb)
-- [Ensemble Learning and Random Forests](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/07.Ensembles_RFs.ipynb)
+- [The Machine Learning Landscape](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/01.ML_Landscape)
+- [End-to-End Machine Learning Project](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/02.End-to-End-ML-Project)
+- [Classification](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/03.Classification)
+- [Training Models](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/04.Training-Models)
+- [Support Vector Machines](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/05.SVMs)
+- [Decision Trees](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/06.Decision_Trees)
+- [Ensemble Learning and Random Forests](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/07.Ensembles_RFs)
 - Dimensionality Reduction
 - Unsupervised Learning Techniques
 
