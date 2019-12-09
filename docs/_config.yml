@@ -3,7 +3,7 @@ output: web
 topnav_title: hands_on_ml_src
 site_title: hands_on_ml_src
 company_name: Aurelien Geron
-description: My Personal Notebooks & Code to Go Along with "Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems"  Book by Aurelien Geron
+description: My Personal Notebooks & Code to Go Along with "Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow Concepts, Tools, and Techniques to Build Intelligent Systems"  Book by Aurelien Geron
 # Add Google analytics id if you have one and want to use it here
 google_analytics:
 # See http://nbdev.fast.ai/search for help with adding Search
@@ -18,8 +18,6 @@ exclude:
   - .idea/
   - .gitignore
   - vendor
- 
-exclude: [vendor]
 
 highlighter: rouge
 markdown: kramdown
