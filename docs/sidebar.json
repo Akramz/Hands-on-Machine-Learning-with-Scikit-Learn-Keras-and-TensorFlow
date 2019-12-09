@@ -1,10 +1,6 @@
 {
-  "Notebook": {
-    "Export to modules": "/export",
-    "Convert to html": "/export2html",
-    "Show doc": "/showdoc",
-    "Test functions": "/test",
-    "Core functions": "/core",
-    "Command line functions": "/cli"
+  "Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow": {
+    "Overview": "/",
+    "Title": "/07.Ensembles_RFs"
   }
 }
