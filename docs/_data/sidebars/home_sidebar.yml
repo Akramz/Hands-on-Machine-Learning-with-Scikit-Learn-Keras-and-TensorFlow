@@ -30,6 +30,9 @@ entries:
     - output: web,pdf
       title: Chapter 7. Ensemble Learning & Random Forests
       url: /07.Ensembles_RFs
+    - output: web,pdf
+      title: Chapter 8. Dimensionality Reduction
+      url: /08.Dim_Reduction
     output: web
     title: hands_on_ml
   output: web
