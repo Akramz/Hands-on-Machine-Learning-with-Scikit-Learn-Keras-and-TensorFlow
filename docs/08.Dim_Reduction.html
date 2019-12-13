@@ -23,7 +23,159 @@ sidebar: home_sidebar
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>...</p>
+<ul>
+<li>Many ML problems will involve thousands or even millions of features per instance.</li>
+<li>Not only all of these features make training extremly slow, but they can also make it much harder for an optimization method to find a good solution.</li>
+<li>This problem is often referred to as the <strong>curse of dimensionality</strong>.</li>
+<li>In real world problem, it is often possible to reduce the number of features considerably.<ul>
+<li>Turning an intractable problem into a tractable one.</li>
+</ul>
+</li>
+<li>The goal is to remove the maximum number of features while minimizing information loss that relates to a specific task<ul>
+<li>Task example — Classifying MNIST digits.</li>
+</ul>
+</li>
+<li>Reducing dimensionality does cause some information loss.</li>
+<li>It also makes your pipeline a bit more complex and thus harder to maintain.</li>
+<li>Dimensionality reduction is usually conducted to <strong>speed up training</strong>.</li>
+<li>Dimensionality reduction is also extremly useful for data visualization.<ul>
+<li>Taking it down to 2/3 dimensions for your data set will allow you visualize it in a 2/3D space.</li>
+</ul>
+</li>
+<li>DataViz is also important to communicate your findings to people who are not data scientists.<ul>
+<li>In Particular, decision makers who will use your results.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>In this chapter we will:<ul>
+<li>Discuss the curse of dimenstionality.</li>
+<li>Get a sense of what goes on in a high-dimenstional space.</li>
+<li>Consider the main two approaches to dimensionality reduction:<ul>
+<li>Projection</li>
+<li>Manifold Learning</li>
+</ul>
+</li>
+<li>Go through 3 popular dimensionality reduction techniques:<ul>
+<li>PCA</li>
+<li>Kernel PCA</li>
+<li>LLE</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-Curse-of-Dimensionality">The Curse of Dimensionality<a class="anchor-link" href="#The-Curse-of-Dimensionality">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>We are so used to living in three dimensions<ul>
+<li>4 if you consider time, and a few more if you are a string theorist.</li>
+</ul>
+</li>
+<li>It turns out that many things behave very differently in high-dimensional spaces.</li>
+<li>If you pick a random point in a unit square, it will have ~0.4% chance of being located at &lt;0.001 from a border.</li>
+<li>But in a 1,000-dimensional hyper-cube the probability is &gt;99.999999%.<ul>
+<li>Most points in a high-dimensional space are very close to the border.</li>
+</ul>
+</li>
+<li>Same goes to distances betweeen points, If you pick two random points in a lower dimensional space, they will be closer in comparison to picking them from a high-dimensional space.</li>
+<li><strong>There is just plenty of space in a high-dimensional one!</strong></li>
+<li>High-dimensional datasets are at risk of being too sparse.</li>
+<li>The most dimensions a dataset has, the more risk it is to overfit it.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Main-Approaches-to-Dimensionality-Reduction">Main Approaches to Dimensionality Reduction<a class="anchor-link" href="#Main-Approaches-to-Dimensionality-Reduction">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Projection">Projection<a class="anchor-link" href="#Projection">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include image.html style="width:50%" file="static/imgs/subspace_projection.png" %}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Manifold-Learning">Manifold Learning<a class="anchor-link" href="#Manifold-Learning">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include image.html style="width:50%" file="static/imgs/manifold_classification.png" %}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="PCA">PCA<a class="anchor-link" href="#PCA">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Principal Component Analysis is by far the most popular dimensionality reduction algorithm.</li>
+<li>First, <strong>It identifies the hyperplane that lies closest to the data</strong>.</li>
+<li>Then, <strong>It projects the data into it</strong>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Preserving-the-Variance">Preserving the Variance<a class="anchor-link" href="#Preserving-the-Variance">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include image.html style="width:66%" file="static/imgs/2D_variance_projection.png" %}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Principle-Components">Principle Components<a class="anchor-link" href="#Principle-Components">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>... </li>
+</ul>
 
 </div>
 </div>
