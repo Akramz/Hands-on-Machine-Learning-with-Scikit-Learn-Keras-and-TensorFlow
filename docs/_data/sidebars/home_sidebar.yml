@@ -33,6 +33,9 @@ entries:
     - output: web,pdf
       title: Chapter 8. Dimensionality Reduction
       url: /08.Dim_Reduction
+    - output: web,pdf
+      title: Chapter 9. Unsupervised Learning
+      url: /09.Unsupervised_learning
     output: web
     title: hands_on_ml
   output: web

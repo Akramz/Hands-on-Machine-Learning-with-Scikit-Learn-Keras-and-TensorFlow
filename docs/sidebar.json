@@ -8,6 +8,7 @@
     "Chapter 5. Support Vector Machines": "/05.SVMs",
     "Chapter 6. Decision Trees": "/06.Decision_Trees",
     "Chapter 7. Ensemble Learning & Random Forests": "/07.Ensembles_RFs",
-    "Chapter 8. Dimensionality Reduction": "/08.Dim_Reduction"
+    "Chapter 8. Dimensionality Reduction": "/08.Dim_Reduction",
+    "Chapter 9. Unsupervised Learning": "/09.Unsupervised_learning"
   }
 }
