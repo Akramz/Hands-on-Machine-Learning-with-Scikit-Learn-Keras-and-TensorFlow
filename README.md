@@ -16,7 +16,6 @@
 <div style="text-align:center"><img style="width:100%" src="static/imgs/book_cover.png"></div>
 
 - This Books assumes you know close to nothing about machine learning.
-- We will cover a large number of machine learning techniques, from the most simpleset and widely used (Linear Regression) to deep learning techniques that win competitions.
 - We will be using production-ready Python frameworks
     - Scikit-Learn
     - Keras
@@ -38,19 +37,6 @@
 - [Support Vector Machines](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/05.SVMs)
 - [Decision Trees](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/06.Decision_Trees)
 - [Ensemble Learning and Random Forests](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/07.Ensembles_RFs)
-- Dimensionality Reduction
-- Unsupervised Learning Techniques
-
-### 2. Neural Networks & Deep Learning
-- Introduction to Artificial Neural Networks with Keras
-- Training Deep Neural Networks
-- Custom models and training with TensorFlow
-- Loading and Preprocessing Data with TensorFlow
-- Deep Computer Vision using Convolutional Neural Networks
-- Processing Sequences Using RNNs and CNNs
-- Natural Language Processing with RNNs and Attention
-- Representation Learning and Generative Learning Using Autoencoders and GANs
-- Reinforcement Learning
-- Training and Deploying TensorFlow Models at Scale
-
+- [Dimensionality Reduction](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/08.Dim_Reduction)
+- [Unsupervised Learning Techniques](https://akramz.github.io/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/09.Unsupervised_learning)
 ---
