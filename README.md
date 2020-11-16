@@ -20,6 +20,7 @@ The first part of the book is mostly based on `Scikit-Learn`, while the 2nd part
 
 ### The Fundamentals of Machine Learning
 
+We provide links for the available notebooks:
 - [The Machine Learning Landscape](https://nbviewer.jupyter.org/github/Akramz/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/blob/master/01.ML_Landscape.ipynb)
 - [End-to-End Machine Learning Project](https://nbviewer.jupyter.org/github/Akramz/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/blob/master/02.End-to-End-ML-Project.ipynb)
 - [Classification](https://nbviewer.jupyter.org/github/Akramz/Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/blob/master/03.Classification.ipynb)
