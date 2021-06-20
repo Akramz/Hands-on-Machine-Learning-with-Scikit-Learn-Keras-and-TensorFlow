@@ -1,1 +1,5 @@
 
+pandas
+keras
+numpy
+seaborn
