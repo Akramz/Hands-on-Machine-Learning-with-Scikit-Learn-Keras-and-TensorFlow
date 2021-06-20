@@ -3,3 +3,4 @@ pandas
 keras
 numpy
 seaborn
+tensorflow
